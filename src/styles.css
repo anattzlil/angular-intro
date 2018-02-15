@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+
+body {
+    background: url('https://www.thelabradorsite.com/wp-content/uploads/2017/11/cute.jpg') no-repeat center center fixed;
+    background-size: cover;
+}

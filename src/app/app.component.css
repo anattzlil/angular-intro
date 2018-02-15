@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-hdl {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 1.5% 0;
+    color: #dd0332;
+    background: white;
+
+}
+
+.container-big {
+    padding: 2% 27% 0;
+    position: relative;
+}
+
+.square-alt {
+    position: absolute;
+    border: 3px solid #da0332;
+    width: 740px;
+    height: 45px;
+    bottom: -12%;
+    right:28.5%;
+    z-index: -1;
+}
+
+.container {
+    position: relative;    
+    display: inline-block;
+    padding: 0.5% 1%;
+
+}
+
+input {
+    background-color: #b6042b;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 5% 5%;
+}
+
+::placeholder {
+    color: white;
+}
+
+.square {
+    position: absolute;
+    border: 3px solid #ffffff;
+    width: 160px;
+    height: 30px;
+    bottom: 0.5%;
+    right:30%;
+    z-index: -1;
+}
+
+.name-result {
+    padding-top: 4%;
+    color: #b6042b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    color: white;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 3px 0;
+    text-shadow: 0px 2px #3a3a3a71;;
+}
+
+.message { 
+    font-size: 0.8em; 
+}
+
+.warning {
+    color: white;
+}
+
+.add-btn {
+    background-color: #70061e;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-left: 1%;
+    padding: 0.5% 1%;
+}
+
+.date-btn{
+    background-color: #da0332;
+    color: white;
+    font-size: 12px;
+    border: none;
+    margin-left: 1%;
+    padding: 0.3% 0.5%;
+}

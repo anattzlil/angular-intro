@@ -1,0 +1,6 @@
+<h3 class="name-result">{{title}}</h3>
+<ul>
+  <li class="list" *ngFor = "let dog of dogs; index as i">{{i+1}}) {{dog.name | uppercase}}: {{dog.weight}} kg, born {{dog.birthDate | date: dog.btnValue === '-' ? "fullDate" : 'shortDate'}}
+    <button class="date-btn" (click)="dateClick(i)">{{dog.btnValue}}</button>
+  </li>
+</ul>
