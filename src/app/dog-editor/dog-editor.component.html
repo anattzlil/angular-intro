@@ -1,0 +1,15 @@
+<h3 class="name-result">{{dog.name}}<span *ngIf='dog.weight<10' [ngClass]="{'warning':dogWeight<5, 'message': true}"> is underweight</span></h3>
+<div class="container">
+  <input type="text" [(ngModel)]="dog.name" placeholder="dog's name"/>
+</div>
+<div class="container">
+  <input type="number" [(ngModel)]="dog.weight" placeholder="dog's weight"/>
+</div>
+<div class="container">
+    <input type="text" [(ngModel)]="dog.birthDate" placeholder="dog's birthdate"/>
+  </div>
+<button *ngIf = "!dog.id" class="add-btn" type="button" (click)="addDog()">Add Dog</button>
+<span *ngIf = "dog.id">
+<button class="add-btn" type="button" (click)="editDog()">Edit Dog</button>
+<button class="add-btn" type="button" (click)="cancelEdit()">Cancel</button>
+</span>

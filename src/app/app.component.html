@@ -7,26 +7,6 @@
   </div>
 </div>
 <div style="text-align:center">
-    <h3 class="name-result">{{dogName}}<span *ngIf='dogWeight<10' [ngClass]="{'warning':dogWeight<5, 'message': true}"> is underweight</span></h3>
-  <div class="container">
-    <input type="text" [(ngModel)]="dogName" placeholder="dog's name"/>
-  </div>
-  <div class="container">
-    <input type="number" [(ngModel)]="dogWeight" placeholder="dog's weight"/>
-  </div>
-  <div class="container">
-      <input type="text" [(ngModel)]="birthDate" placeholder="dog's birthdate"/>
-    </div>
-  <button class="add-btn" type="button" (click)="addDog()">Add Dog</button>
-</div>
-<div style="text-align:center">
 <app-dogs></app-dogs>
 </div>
-<div style="text-align:center">
-    <h3 class="name-result">What about some cats?</h3>
-    <ul>
-      <li class="list" *ngFor = "let cat of cats; index as i">{{i+1}}) {{cat.name | uppercase}}: {{cat.weight}} kg, born {{cat.birthDate | date: 'shortDate'}}
-      </li>
-    </ul>
-  </div>
 
